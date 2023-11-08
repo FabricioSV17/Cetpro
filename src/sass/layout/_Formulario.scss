@@ -1,0 +1,117 @@
+.Formulario{
+    width: 100%;
+    background: #f2f2f2;
+    padding: 2rem 0;
+    font-family: $Roboto;
+    &-titulo{
+        text-align: center;
+        font-size: 5rem;
+    }
+    &-contenedor{
+        @include desktop{
+            display: flex;
+        }
+    } 
+    &-contenido{
+        width: 100%;
+        @include desktop{
+            width: 50%;
+            order: 1;
+            margin-top: 3rem;
+            margin-left: 2rem;
+        }
+        .Form{
+            width: 100%;
+            @include desktop{
+                width: 100%;
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+            }
+            &-input{
+                display: block;
+                margin: 1.5rem auto;
+                width: 90%;
+                input{
+                    width: 100%;
+                    outline: none;
+                    padding: 1rem 1rem .2rem 1rem;
+                    font-size: 1.5rem;
+                    border: none;
+                    background: none;
+                    border-bottom: 2px solid #000;
+                    &::placeholder{
+                        text-transform: uppercase;
+                    }
+                }
+            }
+            &-checkbox{
+                display: block;
+                width: 90%;
+                margin: 0 auto;
+                font-size: 1.9rem;
+                @include desktop{
+                    grid-column: 1/3;
+                }
+            }
+        }
+    }  
+
+    &-mapa{
+        width: 100%;
+        padding: 1rem;
+        margin-top: 2rem;
+        @include desktop{
+            width: 50%;
+        }
+        iframe{
+            width: 100%;
+        }
+    }     
+}
+select{
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    background: none;
+    font-size: 2rem;
+    padding: 1rem 1rem .2rem 1rem;
+    border: none;
+    border-bottom: 2px solid #000;
+    outline: none;
+    @include desktop{
+        width: 95%;
+        grid-column: 1/3;
+    }
+}
+.input-btn{
+    display: block;
+    margin: 2rem auto 1rem auto;
+    background: none;
+    padding: .5rem 5rem;
+    font-size: 2.2rem;
+    border: 3px solid #000;
+    font-weight: 700;
+    @include desktop{
+        grid-column: 1/3;
+    }
+}
+.textArea{
+    width: 90%;
+    display: block;
+    margin: 1.5rem auto;
+    height: 150px;
+    padding: 1rem;
+    resize: none;
+    font-size: 1.6rem;
+    font-family: $Roboto;
+    outline: none;
+    border: 2px solid #000;
+    background: none;
+    @include desktop{
+        width: 95%;
+        grid-column: 1/3;
+        &::placeholder{
+            font-size: 1.8rem;
+        }
+    }
+}

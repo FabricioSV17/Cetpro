@@ -1,0 +1,85 @@
+.seccion-estudiar{
+    width: 100%;
+    background: #f2f2f2;
+    padding: 1rem;
+    @include tablet{
+        padding: 2rem 0;
+    }
+    .estudiar-contenedor{
+        @include desktop{
+            display: flex;
+            align-items: center;
+        }
+        .estudiar-contenido{
+            @include desktop{
+                width: 50%;
+            }
+        }
+        .estudiar-titulo{
+            color: $Azul;
+            padding-left: 1rem;
+            border-left: .7rem solid $Naranja;
+            margin-bottom: 1.5rem;
+        }
+        .estudiar-parrafo{
+            font-size: 1.7rem;
+            padding-left: 1rem;
+            line-height: 1.6;
+            font-weight: 300;
+        }
+        .btn{
+            margin-top: 1rem;
+            padding: 1rem 3rem;
+            margin-left: .5rem;
+            background: linear-gradient(
+                0deg,
+                rgba($Verde,.7),
+                rgba($VerdeLimon,.7)
+
+            );
+            font-size: 1.7rem;
+            color: #000;
+            border-radius: 1rem;
+        }
+        
+        .estudiar-numeros{
+            text-align: center;
+            margin: 2rem 0;
+            @include desktop{
+                width: 50%;
+                margin-bottom: 6rem;
+                margin-left: 3rem;
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+            }
+            .tittle1{
+                color: $Azul;
+            }
+            .tittle2{
+                color: $Verde;
+            }
+            .tittle3{
+                color: $Naranja;
+            }
+            .tittle4{
+                color: $CelesteOscuro;
+            }
+            
+            .estudiar-dato{
+                margin: 2rem 0;
+                .dato-parrafo{
+                    font-size: 1.8rem;
+                    font-weight: 300;
+                    @include tablet{
+                        font-size: 2rem;    
+                    }
+                }
+                @include tablet{
+                    .dato-titulo{
+                        font-size: 3rem;
+                    }
+                }
+            }
+        }
+    }
+}

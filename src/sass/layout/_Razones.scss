@@ -1,0 +1,61 @@
+.Razones{
+    width: 100%;
+    @include desktop{
+        padding: 2rem 0;
+    }
+    &-contenido{
+        padding: .5rem;
+        width: 100%;
+        text-align: center;
+        .Razones-cartas{
+            @include desktop{
+                display: flex;
+                align-items: center;
+            }
+        }
+        .Razones-carta:nth-child(1) h3{
+            color: $Azul;
+        }
+        .Razones-carta:nth-child(2) h3{
+            color: $Verde;
+        }
+        .Razones-carta:nth-child(3) h3{
+            color: $CelesteOscuro;
+        }
+    }
+    &-titulo{
+        font-size: 3.5rem;
+        margin: 2rem 0;
+        line-height: 1.6;
+    }
+    .Razones-carta{
+        padding: 2rem;
+        @include desktop{
+            border: 1px solid #000;
+            margin: 0 1.5rem;
+            border-radius: 1rem;
+        }
+        .carta-titulo{
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+            @include desktop{
+                font-size: 3rem;
+            }
+        }
+        .carta-parrafo{
+            font-weight: 400;
+            line-height: 1.7;
+            @include desktop{
+                font-size: 1.9rem;
+                line-height: 1.8;
+                font-weight: 300;
+            }
+        }
+    }
+    &-imagen{
+        padding: 1rem;
+        @include telefono{
+            display: none;
+        }
+    }
+}

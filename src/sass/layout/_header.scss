@@ -1,0 +1,44 @@
+.Encabezado {
+    padding: .2rem 1.5rem;
+    width: 100%;
+    z-index: 11111;
+    &-contenedor {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &-Logo{
+        @include tablet{
+            display: flex;
+            align-items: center;
+            .Encabezado-titulo{
+                margin-left: 2rem;
+                font-size: 3rem;
+                font-weight: 400;
+            }
+        }
+    }
+    &-titulo {
+        display: none;
+        @include tablet{
+            display: block;
+        }
+    }
+
+    img {
+        width: 10rem;
+    }
+
+    &-menuBar {
+        font-size: 3rem;
+        margin-right: 2rem;
+        margin-bottom: 1rem;
+        z-index: 1111;
+        i {
+            cursor: pointer;
+        }
+    }
+    .Close{
+        display: none;
+    }
+}

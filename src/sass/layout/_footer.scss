@@ -1,0 +1,51 @@
+.footer{
+    width: 100%;
+    padding: 2rem 1rem;
+    background: #111;
+    color: $Blanco;
+    &-contenedor{
+        text-align: center;
+        @include desktop{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+    &-contenido{
+        img{
+            width: 20rem;
+            margin-bottom: 1rem;
+            @include desktop{
+                width: 13rem;
+            }
+        }
+    }
+    @include desktop{
+        padding: 1rem;
+        &-titulo{
+            font-size: 2rem;
+        }
+    }
+    &-titulo{
+        margin-bottom: 1rem;
+        font-weight: 400;
+        letter-spacing: .2rem;
+    }
+    &-parrafo{
+        font-size: 1.7rem;
+        margin: .5rem 0;
+        @include desktop{
+            font-size: 1.9rem;
+        }
+    }
+    &-iconos{
+        margin-top: 2rem;
+        i{
+            font-size: 3rem;
+            margin: 0 1rem;
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+    }
+}
